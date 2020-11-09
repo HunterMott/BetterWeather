@@ -2,11 +2,13 @@
 
 ## Project Name
 
-The name of your project.
+BetterWeather
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This web application will take your zip code and return deatiled weather information! 
+Weather updates every 3 hours for up to 5 days in advanced! 
+(Weather Condition, High and low, Feels like, Wind speeds)
 
 ## API and Data Sample
 
