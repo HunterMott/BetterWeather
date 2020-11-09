@@ -11,6 +11,48 @@ Use this section to describe your final project and perhaps any links to relevan
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```
+{
+cod: "200",
+message: 0,
+cnt: 40,
+list: [
+{
+dt: 1604966400,
+main: {
+temp: 32.88,
+feels_like: 25.81,
+temp_min: 32.11,
+temp_max: 32.88,
+pressure: 1017,
+sea_level: 1017,
+grnd_level: 863,
+humidity: 87,
+temp_kf: 0.43
+},
+weather: [
+{
+id: 804,
+main: "Clouds",
+description: "overcast clouds",
+icon: "04d"
+}
+],
+clouds: {
+all: 91
+},
+wind: {
+speed: 5.57,
+deg: 326
+},
+visibility: 10000,
+pop: 0.19,
+sys: {
+pod: "d"
+},
+dt_txt: "2020-11-10 00:00:00"
+},
+```
 
 ## Wireframes
 
