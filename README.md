@@ -87,7 +87,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Nov 10| Project Approval / Core Application Structure | Incomplete
 |Nov 12| Pseudocode / get started on JS | Incomplete
 |Nov 13| Actual code / CSS / Debug | Incomplete
