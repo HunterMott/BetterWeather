@@ -11,8 +11,8 @@ Weather updates every 3 hours for up to 5 days in advanced!
 (Weather Condition, High and low, Feels like, Wind speeds)
 
 ## API and Data Sample
+https://openweathermap.org/api
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 ```
 {
 cod: "200",
@@ -58,25 +58,26 @@ dt_txt: "2020-11-10 00:00:00"
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://imgur.com/1elQTSn
 
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+functional input and submit button.
+Search by zip code.
+Provide details on current weather conditions in the specified zipcode.
+Update background color with current weather conditions.
+Clean and efficient code.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
-
+Pull more data from a second API.
+Add another section for forcasting weather out 5 or more days. 
+Implement background images with current weather conditions, rather than colors.
+Add a daily umbrella recommendation.
+Animate some items to bring the site to life! (Button, and search bar)
+Add a dark mode button.
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -86,15 +87,17 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Nov 10| Project Approval | Incomplete
-|Nov 12| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Nov 13| Pseudocode / actual code | Incomplete
-|Nov 16| MVP | Incomplete
+|Nov 10| Project Approval / Core Application Structure | Incomplete
+|Nov 12| Pseudocode / get started on JS | Incomplete
+|Nov 13| Actual code / CSS / Debug | Incomplete
+|Nov 16| MVP is done / PostMVP | Incomplete
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
+https://imgur.com/undefined
 
 ## Timeframes
 
@@ -104,8 +107,20 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Setting up project plans | H | 3hrs| 4hrs | 3hrs |
+| Understanding API | H | 3hrs| -- | -- |
+| Get all API data on DOM | H | 3 hrs | -- | -- |
+| Html | H | 3hrs | -- | -- |
+| CSS | H | 3hrs | -- | -- |
+| Advanced CSS | M | 3hrs | -- | -- |
+| Debug | H | 3hrs | -- | -- |
+| Beginning JS | H | 3hrs | -- | -- |
+| Adaptive background | M | 3hrs | -- | -- |
+| Header / Menu | H | 3hrs | -- | -- |
+| Manipulate the DOM | H | 3hrs | -- | -- |
+| Get my weather conditions to have icons | M | 3hrs | -- | -- |
+| | | | | |
+| | | | | |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
