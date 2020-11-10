@@ -65,19 +65,19 @@ https://imgur.com/1elQTSn
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*Functional input and submit button.
-*Search by zip code.
-*Provide details on current weather conditions in the specified zipcode.
--Update background color with current weather conditions.
--Clean and efficient code.
+* Functional input and submit button.
+* Search by zip code.
+* Provide details on current weather conditions in the specified zipcode.
+* Update background color with current weather conditions.
+* Clean and efficient code.
 
 #### PostMVP  
--Pull more data from a second API.
--Add another section for forcasting weather out 5 or more days. 
--Implement background images with current weather conditions, rather than colors.
--Add a daily umbrella recommendation.
--Animate some items to bring the site to life! (Button, and search bar)
--Add a dark mode button.
+* Pull more data from a second API.
+* Add another section for forcasting weather out 5 or more days. 
+* Implement background images with current weather conditions, rather than colors.
+* Add a daily umbrella recommendation.
+* Animate some items to bring the site to life! (Button, and search bar)
+* Add a dark mode button.
 
 ## Project Schedule
 
