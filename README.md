@@ -6,7 +6,7 @@ BetterWeather
 
 ## Project Description
 
-This web application will take your zip code and return current deatiled weather information and weather updates every 3 hours for up to 5 days in advanced! 
+This web application will take your zip code and return current detailed weather information and weather updates every 3 hours for up to 5 days in advanced! 
 (Weather Condition, High and low, Feels like, Wind speeds)
 
 ## API and Data Sample
