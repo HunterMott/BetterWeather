@@ -97,7 +97,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 
-https://imgur.com/NjxLVEI
+https://imgur.com/4m2qNYp
 
 ## Timeframes
 
