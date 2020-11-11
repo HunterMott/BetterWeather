@@ -42,8 +42,23 @@ form{
 
 .currentWeather {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 40px;
   font-size: 24px;
   height: 250px;
+  background-color: burlywood;
+}
+.weatherTitle{
+  /* justify-content: center; */
+  text-align: center;
+  height: 25px;
+  width: 100%;
+  align-content: center;
+}
+.simpleWeather {
+  flex-wrap: wrap;
+  background-color: cadetblue;
+  height: 200px;
+  width: 200px;
+  margin-left: 25px;
 }

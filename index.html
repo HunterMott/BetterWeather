@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,18 @@
   <script defer src="app.js"></script>
   <title>BetterWeather</title>
 </head>
+
 <body>
   <header>BetterWeather</header>
   <div class="intro">Enter your ZipCode to check the weather!</div>
   <form>
     <input type="text">
-    <button class="submitBtn">Submit</button>
+    <button class="button" id="search">Submit</button>
   </form>
-  <div class="currentWeather">Here we have your current weather!</div>
+  <div class="currentWeather">
+    <div class="weatherTitle">Here we have your current weather!</div>
+    <div class="simpleWeather"></div>
+  </div>
 </body>
+
 </html>

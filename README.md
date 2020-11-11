@@ -83,7 +83,7 @@ https://imgur.com/1elQTSn
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Nov 10| Project Approval / Core Application Structure | Incomplete
+|Nov 10| Project Approval / Core Application Structure | Complete
 |Nov 12| Pseudocode / Actual code | Incomplete
 |Nov 13| MVP is done / CSS / Debug | Incomplete
 |Nov 16| PostMVP / Debug | Incomplete
@@ -100,11 +100,11 @@ https://imgur.com/4m2qNYp
 | Setting up project plans | H | 3hrs| 4hrs | 3hrs |
 | Understanding API | H | 3hrs| -- | -- |
 | Get all API data on DOM | H | 3hrs | -- | -- |
-| Html | H | 3hrs | -- | -- |
+| Html | H | 3hrs | 2.5 | -- |
 | CSS | H | 3hrs | -- | -- |
 | Advanced CSS | M | 3hrs | -- | -- |
 | Debug | H | 3hrs | -- | -- |
-| Beginning JS | H | 3hrs | -- | -- |
+| Beginning JS | H | 3hrs | 4hrs | -- |
 | Adaptive background | M | 3hrs | -- | -- |
 | Header / Menu | H | 3hrs | -- | -- |
 | Manipulate the DOM | H | 3hrs | -- | -- |
