@@ -98,16 +98,16 @@ https://imgur.com/4m2qNYp
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Setting up project plans | H | 3hrs| 4hrs | 3hrs |
-| Understanding API | H | 3hrs| -- | -- |
-| Get all API data on DOM | H | 3hrs | -- | -- |
+| Understanding API | H | 3hrs| 2hrs | -- |
+| Get all API data on DOM | H | 3hrs | 3hrs | -- |
 | Html | H | 3hrs | 2.5 | -- |
-| CSS | H | 3hrs | -- | -- |
+| CSS | H | 3hrs | 1000hrs | -- |
 | Advanced CSS | M | 3hrs | -- | -- |
 | Debug | H | 3hrs | -- | -- |
 | Beginning JS | H | 3hrs | 4hrs | -- |
 | Adaptive background | M | 3hrs | -- | -- |
 | Header / Menu | H | 3hrs | -- | -- |
-| Manipulate the DOM | H | 3hrs | -- | -- |
+| Manipulate the DOM | H | 3hrs | 2.5hrs | -- |
 | Get my weather conditions to have icons | M | 3hrs | -- | -- |
 | Clean up code / optimize | M | 2hrs| -- | -- |
 | Testing finished product | M | 3hrs| -- | -- |
