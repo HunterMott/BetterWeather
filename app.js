@@ -51,3 +51,13 @@ function removeWeather() {
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
+
+
+
+
+
+///COLOR CHAGING BACKGROUND
+// 80 + = #C29BA3
+// 79 - 65 = #FFDAD1
+// 64 - 45 = #E0F8F5
+// 44 < = #B7EAF7

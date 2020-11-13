@@ -6,14 +6,14 @@
 }
 
 body{
-  background-color: grey;
+  background-color: #8A9BA7;
 }
 
 header{
   width: 100%;
   height: 30px;
   color: white;
-  background-color: black;
+  background-color: #B7EAF7;
   padding: 8px;
   padding-top: 8px;
   font-size: 24px;
@@ -63,13 +63,34 @@ img{
   width: 50px;
   height: auto;
 }
+/* Button animation insipred by: https://www.fabriziovanmarciano.com/button-styles/ */
 .btn{
-  height: 25px;
-  width: 60px;
-  margin-left: 8px;
+  /* height: 25px; */
+  /* width: 60px; */
+  /* margin-left: 8px; */
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 12px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
-.btn:hover {opacity: 1}
 
+.btn:hover {
+  /* opacity: 0.9;
+  background-color: #2B2B2B; */
+  color: #ffffff !important;
+  background: #800000;
+  border-color: #800000 !important;
+  transition: all 0.4s ease 0s;
+}
 input{
   padding-left: 8px;
+  background: #fff;
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, .3);
+  font-size: 18px;
+  width: 125px;
 }
+
