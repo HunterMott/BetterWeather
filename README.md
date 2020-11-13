@@ -110,7 +110,7 @@ https://imgur.com/4m2qNYp
 | Get my weather conditions to have icons | M | 3hrs | 3hrs | -- |
 | Clean up code / optimize | M | 2hrs| -- | -- |
 | Testing finished product | M | 3hrs| -- | -- |
-| Total | H | 41hrs| 5hrs | 5hrs |
+| Total | H | 41hrs| 25.5hrs | --hrs |
 
 ## Code Snippet
 
