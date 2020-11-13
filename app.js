@@ -1,7 +1,6 @@
 const getData = async (x) => {
   const url = `http://api.openweathermap.org/data/2.5/weather?zip=${x},us&units=imperial&appid=8e82c4661e8a9fb77637f833ac5af542`
   removeWeather()
-  backgroundCondition()
   try {
     const response = await axios.get(url)
     const data = response.data
@@ -39,14 +38,14 @@ const getData = async (x) => {
 
   } catch (error) {
     console.log(error);
-  }
+  } backgroundCondition()
 }
 
 searchBtn = document.querySelector('#search')
 searchBtn.addEventListener('click', () => {
   let input = document.querySelector('#blank').value
   getData(input)
-  backgroundCondition(data.weather[0].main)
+  // backgroundCondition(data.weather[0].main)
 
 })
 
@@ -76,8 +75,8 @@ function removeWeather() {
 // let background = document.querySelector('body').style.backgroundImage('https://images.unsplash.com/photo-1485249245068-d8dc50b77cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80')
 
 
-function backgroundCondition(weather) {
-  const condition = weather
+function backgroundCondition() {
+  let weather = getData((value), data.weather[0].main)
   if (weather == 'clear') {
     document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1495511167051-13bb07bde85b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
   } else if (weather == 'rain') {
@@ -93,6 +92,5 @@ function backgroundCondition(weather) {
   } else {
     document.querySelector('body').style.backgroundColor = ('#8A9BA7')
   }
-  return
 }
 // backgroundCondition(data.weather[0].main)
