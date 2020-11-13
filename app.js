@@ -4,6 +4,8 @@ const getData = async (x) => {
   try {
     const response = await axios.get(url)
     const data = response.data
+    // backgroundCondition(response.data.weather[0].main)
+    // console.log(response.data.weather[0].main);
     const zipName = data.name
     const currentTemp = data.main.temp
     const currentFeels = data.main.feels_like
@@ -24,10 +26,12 @@ const getData = async (x) => {
     highLow.textContent = `with highs of ${Math.floor(tempMax)}` + "\xB0" + ` and lows of ${Math.floor(tempMin)}` + "\xB0" + '.'
     const disc = document.createElement('h5')
     disc.textContent = `${description}`
-    console.log(data);
+    // console.log(data);
     const simpleWeather = document.querySelector('.simpleWeather')
     simpleWeather.append(cityName, currTemp, disc, highLow)
     backgroundCondition(data.weather[0].main)
+    // console.log(data);
+
     // return data;
 
   } catch (error) {
@@ -35,12 +39,14 @@ const getData = async (x) => {
   }
 }
 
+function sayhello(response) {
+  console.log('Say hello', response);
+}
+
 searchBtn = document.querySelector('#search')
 searchBtn.addEventListener('click', () => {
   let input = document.querySelector('#blank').value
   getData(input)
-  // backgroundCondition()
-
 })
 
 function removeWeather() {
@@ -58,18 +64,18 @@ function removeWeather() {
 
 function backgroundCondition(weather) {
   // let weather = getData(84020)
-  if (weather == 'Clear') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1495511167051-13bb07bde85b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
-  } else if (weather == 'Rain') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1544994108-7b68a790caba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
-  } else if (weather == 'Clouds') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1485249245068-d8dc50b77cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80')
-  } else if (weather == 'Snow') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1477601263568-180e2c6d046e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
-  } else if (weather == 'Drizzle') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1511634829096-045a111727eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80')
-  } else if (weather == 'Thunderstorm') {
-    document.querySelector('body').style.backgroundImage = ('https://images.unsplash.com/photo-1457528877294-b48235bdaa68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
+  if (weather === 'Clear') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1495511167051-13bb07bde85b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
+  } else if (weather === 'Rain') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1544994108-7b68a790caba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
+  } else if (weather === 'Clouds') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1485249245068-d8dc50b77cc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80)')
+  } else if (weather === 'Snow') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1477601263568-180e2c6d046e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
+  } else if (weather === 'Drizzle') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1511634829096-045a111727eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80)')
+  } else if (weather === 'Thunderstorm') {
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1457528877294-b48235bdaa68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
   } else {
     document.querySelector('body').style.backgroundColor = ('#8A9BA7')
   }

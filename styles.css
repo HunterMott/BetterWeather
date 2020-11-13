@@ -7,6 +7,8 @@
 
 body{
   background-color: #8A9BA7;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header{
@@ -80,8 +82,8 @@ img{
 
 .btn:hover {
   color: #ffffff !important;
-  background: #800000;
-  border-color: #800000 !important;
+  background: #B7EAF7;
+  border-color: #B7EAF7 !important;
   transition: all 0.4s ease 0s;
 }
 input{
