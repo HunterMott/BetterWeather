@@ -70,7 +70,6 @@ https://imgur.com/1elQTSn
 * Clean and efficient code.
 
 #### PostMVP  
-* Pull more data from a second API.
 * Add another section for forcasting weather out 5 or more days. 
 * Implement background images with current weather conditions, rather than colors.
 * Add a daily umbrella recommendation.
@@ -101,14 +100,14 @@ https://imgur.com/4m2qNYp
 | Understanding API | H | 3hrs| 2hrs | -- |
 | Get all API data on DOM | H | 3hrs | 3hrs | -- |
 | Html | H | 3hrs | 2.5 | -- |
-| CSS | H | 3hrs | 1000hrs | -- |
+| CSS | H | 3hrs | 3hrs | -- |
 | Advanced CSS | M | 3hrs | -- | -- |
-| Debug | H | 3hrs | -- | -- |
+| Debug | H | 3hrs | 1.5hrs | -- |
 | Beginning JS | H | 3hrs | 4hrs | -- |
 | Adaptive background | M | 3hrs | -- | -- |
 | Header / Menu | H | 3hrs | -- | -- |
 | Manipulate the DOM | H | 3hrs | 2.5hrs | -- |
-| Get my weather conditions to have icons | M | 3hrs | -- | -- |
+| Get my weather conditions to have icons | M | 3hrs | 3hrs | -- |
 | Clean up code / optimize | M | 2hrs| -- | -- |
 | Testing finished product | M | 3hrs| -- | -- |
 | Total | H | 41hrs| 5hrs | 5hrs |
