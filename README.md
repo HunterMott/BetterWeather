@@ -107,9 +107,9 @@ https://imgur.com/4m2qNYp
 | Adaptive background | M | 3hrs | 4hrs | -- |
 | Manipulate the DOM | H | 3hrs | 3hrs | -- |
 | Get my weather conditions to have icons | M | 3hrs | 3hrs | -- |
-| Clean up code / optimize | M | 2hrs| -- | -- |
-| Testing finished product | M | 3hrs| -- | -- |
-| Total | H | 41hrs| 35.5hrs | --hrs |
+| Clean up code / optimize | M | 2hrs| 1hr | -- |
+| Testing finished product | M | 3hrs| 1.5hrs | -- |
+| Total | H | 41hrs| 38hrs | --hrs |
 
 ## Code Snippet
 

@@ -4,8 +4,6 @@ const getData = async (x) => {
   try {
     const response = await axios.get(url)
     const data = response.data
-    // backgroundCondition(response.data.weather[0].main)
-    // console.log(response.data.weather[0].main);
     const zipName = data.name
     const currentTemp = data.main.temp
     const currentFeels = data.main.feels_like
@@ -14,8 +12,6 @@ const getData = async (x) => {
     const description = data.weather[0].description
     const icon = data.weather[0].icon
     const weatherCond = data.weather[0].main
-    // const simpWeather = document.createElement('div')
-    // simpWeather.className = 'simpWeather'
     const cityName = document.createElement('h4')
     cityName.textContent = `${zipName}`
     // const iconimg = document.createElement('img')
@@ -26,13 +22,9 @@ const getData = async (x) => {
     highLow.textContent = `with highs of ${Math.floor(tempMax)}` + "\xB0" + ` and lows of ${Math.floor(tempMin)}` + "\xB0" + '.'
     const disc = document.createElement('h5')
     disc.textContent = `${description}`
-    // console.log(data);
     const simpleWeather = document.querySelector('.simpleWeather')
     simpleWeather.append(cityName, currTemp, disc, highLow)
     backgroundCondition(data.weather[0].main)
-    // console.log(data);
-
-    // return data;
 
   } catch (error) {
     console.log(error);
@@ -63,9 +55,8 @@ function removeWeather() {
 // 44 < = #B7EAF7
 
 function backgroundCondition(weather) {
-  // let weather = getData(84020)
   if (weather === 'Clear') {
-    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1495511167051-13bb07bde85b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
+    document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1574110745453-0f417d9b5023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
   } else if (weather === 'Rain') {
     document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1544994108-7b68a790caba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
   } else if (weather === 'Clouds') {
@@ -80,4 +71,3 @@ function backgroundCondition(weather) {
     document.querySelector('body').style.backgroundColor = ('#8A9BA7')
   }
 }
-// backgroundCondition(data.weather[0].main)
