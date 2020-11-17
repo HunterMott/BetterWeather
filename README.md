@@ -83,9 +83,9 @@ https://imgur.com/1elQTSn
 |---|---| ---|
 |Nov 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Nov 10| Project Approval / Core Application Structure | Complete
-|Nov 12| Pseudocode / Actual code | Incomplete
-|Nov 13| MVP is done / CSS / Debug | Incomplete
-|Nov 16| PostMVP / Debug | Incomplete
+|Nov 12| Pseudocode / Actual code | Complete
+|Nov 13| MVP is done / CSS / Debug | Complete
+|Nov 16| PostMVP / Debug | Complete
 |Nov 17| Presentations | Incomplete
 
 ## Priority Matrix
