@@ -115,12 +115,15 @@ h3, h4, h5, p {
   .simpleWeather {
     background: rgba(183, 234, 247, .4);
   }
+  .forecastDaddy{
+    background-color: rgba(183, 234, 247, .4);
+  }
 }
 .forecastParent {
   display: flex;
   flex-direction: column;
   width: auto;
-  height: auto;
+  height: 700px;
   justify-content: center;
   align-items: center;
   /* background: rgba(216, 191, 216, .4); */
@@ -129,7 +132,7 @@ h3, h4, h5, p {
   display: flex;
   flex-direction: row;
   height: 50px;
-  width: 550px;
+  width: 800px;
   text-align: center;
   justify-content: space-evenly;
   background: rgba(216, 191, 216, .4);

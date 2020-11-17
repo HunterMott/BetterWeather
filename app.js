@@ -1,3 +1,4 @@
+// Current weather function
 const getData = async (x) => {
   const url = `http://api.openweathermap.org/data/2.5/weather?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
   removeWeather('.simpleWeather')
@@ -32,17 +33,15 @@ const getData = async (x) => {
   }
 }
 
-function sayhello(response) {
-  console.log('Say hello', response);
-}
 
+// Input and button 
 searchBtn = document.querySelector('#search')
 searchBtn.addEventListener('click', () => {
   let input = document.querySelector('#blank').value
   getData(input)
   getForecast(input)
 })
-
+// Clear DOM function
 function removeWeather(x) {
   let removeDiv = document.querySelector(`${x}`)
   while (removeDiv.lastChild) {
@@ -50,12 +49,7 @@ function removeWeather(x) {
   }
 }
 
-///COLOR CHAGING BACKGROUND
-// 80 + = #C29BA3
-// 79 - 65 = #FFDAD1
-// 64 - 45 = #E0F8F5
-// 44 < = #B7EAF7
-
+// This my by backgound function
 function backgroundCondition(weather) {
   if (weather === 'Clear') {
     document.querySelector('body').style.backgroundImage = ('url(https://images.unsplash.com/photo-1574110745453-0f417d9b5023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)')
@@ -75,7 +69,7 @@ function backgroundCondition(weather) {
 }
 
 
-
+// This is my forecast function! 
 const getForecast = async (x) => {
   const url = `http://api.openweathermap.org/data/2.5/forecast?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
   try {
@@ -93,7 +87,7 @@ const getForecast = async (x) => {
       forecastDT.textContent = `${dateTime}`
       forecastDT.className = ('dtClass')
       const forecastTemp = document.createElement('p')
-      forecastTemp.textContent = `${Math.floor(fcTemp)}`
+      forecastTemp.textContent = `${Math.floor(fcTemp)}` + "\xB0"
       forecastTemp.className = ('tempClass')
       const forecastIcon = document.createElement('img')
       forecastIcon.setAttribute('src', `http://openweathermap.org/img/w/${fcIcon}.png`)
@@ -102,7 +96,7 @@ const getForecast = async (x) => {
       forecastDesc.textContent = `${fcDesc}`
       forecastDesc.className = ('descClass')
       const forecastWind = document.createElement('p')
-      forecastWind.textContent = `${Math.floor(fcWind)}`
+      forecastWind.textContent = `Wind speed of ${Math.floor(fcWind)} mph`
       forecastWind.className = ('windClass')
       const multiForecast = document.querySelector('.forecastParent')
       const singleForecast = document.createElement('div')
@@ -114,4 +108,3 @@ const getForecast = async (x) => {
     console.log(error);
   }
 }
-// getForecast(84020)
