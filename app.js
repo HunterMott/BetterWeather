@@ -1,6 +1,6 @@
 // Current weather function
 const getData = async (x) => {
-  const url = `http://api.openweathermap.org/data/2.5/weather?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
+  const url = `https://api.openweathermap.org/data/2.5/weather?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
   removeWeather('.simpleWeather')
   removeWeather('.forecastParent')
   try {
@@ -71,7 +71,7 @@ function backgroundCondition(weather) {
 
 // This is my forecast function! 
 const getForecast = async (x) => {
-  const url = `http://api.openweathermap.org/data/2.5/forecast?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
+  const url = `https://api.openweathermap.org/data/2.5/forecast?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
   try {
     const fcResponse = await axios.get(url)
     const fcData = fcResponse.data.list
