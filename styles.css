@@ -8,9 +8,9 @@
 
 body{
 background-image: url(https://images.unsplash.com/photo-1605309367703-fc6e040816bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
 }
 
 header{
@@ -37,9 +37,13 @@ header{
   margin-top: 20px;
 }
 .currentWeather {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 24px;
   height: 250px;
+}
+.forecastParent {
+  margin-top: 20px;
+  height: 1000px;
 }
 .weatherTitle{
   text-align: center;
@@ -111,4 +115,33 @@ h3, h4, h5, p {
   .simpleWeather {
     background: rgba(183, 234, 247, .4);
   }
+}
+.forecastParent {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(216, 191, 216, .4); */
+}
+.forecastDaddy {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 550px;
+  text-align: center;
+  justify-content: space-evenly;
+  background: rgba(216, 191, 216, .4);
+  padding-left: 3px;
+  margin: 4px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+.imgClass {
+  height: 50px;
+  width: 50px;
+}
+p {
+  font-size: 24px;
 }

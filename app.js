@@ -1,6 +1,7 @@
 const getData = async (x) => {
   const url = `http://api.openweathermap.org/data/2.5/weather?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
-  removeWeather()
+  removeWeather('.simpleWeather')
+  removeWeather('.forecastParent')
   try {
     const response = await axios.get(url)
     const data = response.data
@@ -39,10 +40,11 @@ searchBtn = document.querySelector('#search')
 searchBtn.addEventListener('click', () => {
   let input = document.querySelector('#blank').value
   getData(input)
+  getForecast(input)
 })
 
-function removeWeather() {
-  let removeDiv = document.querySelector('.simpleWeather')
+function removeWeather(x) {
+  let removeDiv = document.querySelector(`${x}`)
   while (removeDiv.lastChild) {
     removeDiv.removeChild(removeDiv.lastChild)
   }
@@ -71,3 +73,45 @@ function backgroundCondition(weather) {
     document.querySelector('body').style.backgroundColor = ('#8A9BA7')
   }
 }
+
+
+
+const getForecast = async (x) => {
+  const url = `http://api.openweathermap.org/data/2.5/forecast?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
+  try {
+    const fcResponse = await axios.get(url)
+    const fcData = fcResponse.data.list
+    const slicedData = fcData.splice(0, 8)
+    console.log(slicedData);
+    slicedData.forEach((forecast) => {
+      const dateTime = forecast.dt_txt
+      const fcTemp = forecast.main.temp
+      const fcIcon = forecast.weather[0].icon
+      const fcDesc = forecast.weather[0].description
+      const fcWind = forecast.wind.speed
+      const forecastDT = document.createElement('p')
+      forecastDT.textContent = `${dateTime}`
+      forecastDT.className = ('dtClass')
+      const forecastTemp = document.createElement('p')
+      forecastTemp.textContent = `${Math.floor(fcTemp)}`
+      forecastTemp.className = ('tempClass')
+      const forecastIcon = document.createElement('img')
+      forecastIcon.setAttribute('src', `http://openweathermap.org/img/w/${fcIcon}.png`)
+      forecastIcon.className = ('imgClass')
+      const forecastDesc = document.createElement('p')
+      forecastDesc.textContent = `${fcDesc}`
+      forecastDesc.className = ('descClass')
+      const forecastWind = document.createElement('p')
+      forecastWind.textContent = `${Math.floor(fcWind)}`
+      forecastWind.className = ('windClass')
+      const multiForecast = document.querySelector('.forecastParent')
+      const singleForecast = document.createElement('div')
+      singleForecast.className = ('forecastDaddy')
+      singleForecast.append(forecastDT, forecastTemp, forecastIcon, forecastDesc, forecastWind)
+      multiForecast.append(singleForecast)
+    })
+  } catch (error) {
+    console.log(error);
+  }
+}
+// getForecast(84020)
