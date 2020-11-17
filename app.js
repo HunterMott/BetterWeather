@@ -69,7 +69,7 @@ function backgroundCondition(weather) {
 }
 
 
-// This is my forecast function! 
+// This is my forecast function
 const getForecast = async (x) => {
   const url = `https://api.openweathermap.org/data/2.5/forecast?zip=${x},us&units=imperial&appid=92c2817d5789ddbc77e00ec8a9362f8d`
   try {
