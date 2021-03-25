@@ -8,6 +8,7 @@ BetterWeather
 
 This web application will take your zip code and return current detailed weather information and weather updates every 3 hours for up to 5 days in advanced! 
 (Weather Condition, High and low, Feels like, Wind speeds)
+Live site!! - https:huntermott.github.io/BetterWeather/
 
 ## API and Data Sample
 https://openweathermap.org/api
